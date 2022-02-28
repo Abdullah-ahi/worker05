@@ -93,6 +93,9 @@ export default {
   },
   mounted() {
     this.handleLoadPage();
+    setTimeout(() => {
+      this.$root.closeComponent()
+    }, 100)
   }
 }
 </script>

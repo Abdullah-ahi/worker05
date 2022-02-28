@@ -1,7 +1,7 @@
 
 <template>
   <router-link :to="{name: 'home'}">
-    <div class='close-projects-item-btn' @click='closeComponent'></div>
+    <div class='close-projects-item-btn'></div>
   </router-link>
 </template>
 
@@ -9,11 +9,11 @@
   export default {
     name: 'CloseButton',
     methods: {
-      closeComponent(){
-        setTimeout(() => {
-          this.$root.closeComponent()
-        }, 500)
-      },
+      // closeComponent(){
+      //   setTimeout(() => {
+      //     this.$root.closeComponent()
+      //   }, 500)
+      // },
     },
   }
 </script>
