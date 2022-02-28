@@ -17,7 +17,7 @@
     mounted() {
       document
         .querySelector('.opened-item-name-item')
-        .insertAdjacentHTML('afterbegin', this.componentName);
+        .innerHTML = this.componentName
     }
   }
 </script>
