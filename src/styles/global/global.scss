@@ -1,0 +1,124 @@
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+.opened-projects-item-left-container {
+  width: 42%;
+  height: 100%;
+  position: absolute;
+  background: url('https://github.githubassets.com/images/modules/site/home/astro-mona.svg');
+  background-size: cover;
+  background-repeat: round;
+}
+.opened-item-image-mask {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  background: #1a1b23;
+  position: absolute;
+}
+.opened-item-name {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  width: 92%;
+  word-break: break-all;
+  position: absolute;
+  top: 72%;
+  margin-left: 50px;
+  color: #fff;
+  &-item {
+    position: relative;
+    margin: 0;
+    font-size: 63px;
+  }
+  &::after {
+    content: '';
+    background: #E94C6F;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 92%;
+    height: 6px;
+  }
+}
+.selected-letter {
+  color: #E94C6F;
+}
+.close-projects-item-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 64px;
+  top: 31px;
+  background: url('../../images/close.png');
+  z-index: 3;
+}
+.component-wrapper {
+  transition: opacity .6s;
+}
+.closed-component {
+  opacity: 0.3;
+}
+h2 {
+  font-family: 'Hind', sans-serif;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+}
+@media(max-width: 991px) {
+  .opened-projects-item-left-container {
+    width: 100%;
+    height: 50%;
+  }
+  .component-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: scroll;
+  }
+  .close-projects-item-btn {
+    position: fixed;
+    background-color: #fff;
+  }
+  .opened-item-name-item {
+    font-size: 45px;
+  }
+  .close-projects-item-btn {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+  }
+}
+@media(max-width: 768px) {
+  .opened-item-name-item {
+    font-size: 36px;
+  }
+  .opened-item-name {
+    width: 83%;
+  }
+}
+@media(max-width: 481px) {
+  .opened-projects-item-left-container {
+    height: 40%;
+  }
+  .close-projects-item-btn {
+    right: 25px;
+    top: 9px;
+  }
+  .opened-item-name::after {
+    height: 3px;
+    top: 74%;
+  }
+}
+@media(max-width: 350px) {
+  .opened-item-name {
+    width: 73%;
+  }
+  .close-projects-item-btn {
+    width: 20px;
+    height: 20px;
+    right: 7px;
+  }
+}

@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Open+Sans&display=swap");
+.page-right {
+  position: absolute;
+  right: 0;
+  width: 58%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.about-me-block-wrapper {
+  background: url("../../images/portfolio-bg.jpg");
+  padding: 0 42px 0 8.3%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.profile-head-text {
+  padding: 60px 0 20px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Hind", sans-serif;
+  margin-top: 0;
+}
+.profile-main-block {
+  display: flex;
+}
+.profile-main-block-text {
+  font-size: 14px;
+  line-height: 1.42;
+  color: #343333;
+  margin: 0 0 10px 10px;
+  font-family: "Open Sans", sans-serif;
+  text-indent: 25px;
+}
+.profile-main-block-text-item {
+  margin: 0 0 10px 0;
+}
+.profile-main-img {
+  width: 33%;
+  max-height: 302px;
+  min-width: 227px;
+}
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+.what-can-i-do-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.what-can-i-do-cards-item {
+  width: 38%;
+  text-align: center;
+  -webkit-transition: all 0.8s;
+  transition: all 0.6s;
+  padding: 0 15px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  min-width: 236px;
+}
+.what-can-i-do-cards-item-head-text {
+  font-size: 18px;
+}
+.what-can-i-do-cards-item-body-text {
+  font-size: 14px;
+}
+.what-can-i-do-block {
+  padding-top: 35px;
+  background: #E94C6F;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.what-can-i-do-block-main-text {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Hind", sans-serif;
+  text-align: center;
+}
+.what-can-i-do-cards-item-icon-block {
+  background: #fff;
+  border-radius: 50%;
+  color: #E94C6F;
+  font-size: 36px;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  margin: 12% auto 0;
+  box-shadow: 0 0 10px 8px rgba(224, 197, 197, 0.75);
+  -webkit-box-shadow: 0 0 10px 8px rgba(224, 197, 197, 0.75);
+  -moz-box-shadow: 0 0 10px 8px rgba(224, 197, 197, 0.75);
+  -webkir-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.what-can-i-do-cards-item-icon-block::before {
+  content: "";
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 50%;
+  display: block;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.001, 0.001);
+  transform: scale(0.001, 0.001);
+  width: 60px;
+  height: 60px;
+}
+
+.what-can-i-do-cards-item:hover .what-can-i-do-cards-item-icon-block:before {
+  animation: effect_dylan 0.8s ease-out;
+}
+
+.what-can-i-do-cards-item:hover {
+  background: #e2617d;
+}
+
+.about-done-projects-block {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: url("../../images/facts-bg.jpg");
+  display: flex;
+  justify-content: center;
+}
+
+.done-projects-count-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.done-projects-count-value {
+  font-size: 63px;
+  font-weight: 500;
+}
+.done-projects-count-block {
+  width: 100%;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .about-me-block-wrapper {
+    padding-left: 2%;
+  }
+
+  .page-right {
+    z-index: 2;
+  }
+}
+@media (max-width: 991px) {
+  .page-right {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    overflow-y: unset;
+  }
+
+  .about-me-block-wrapper {
+    padding-right: 2%;
+  }
+
+  .profile-head-text {
+    font-size: 27px;
+  }
+
+  .what-can-i-do-block-main-text {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+
+  .done-projects-count-value {
+    font-size: 45px;
+  }
+
+  .done-projects-count-text {
+    font-weight: normal;
+  }
+}
+@media (max-width: 769px) {
+  .profile-main-img {
+    display: none;
+  }
+  .profile-main-block {
+    flex-direction: column;
+  }
+  .profile-main-block::before {
+    content: "";
+    width: 86%;
+    border: 1px solid #E94C6F;
+    background: #E94C6F;
+    margin: 0 auto 30px;
+  }
+
+  .profile-head-text {
+    font-size: 18px;
+  }
+
+  .what-can-i-do-block-main-text {
+    font-size: 18px;
+  }
+
+  .done-projects-count-value {
+    font-size: 36px;
+  }
+}
+@media (max-width: 540px) {
+  .what-can-i-do-cards-item {
+    width: 100%;
+  }
+}
+@media (max-width: 481px) {
+  .page-right {
+    height: 60%;
+  }
+}
+@media (max-width: 280px) {
+  .what-can-i-do-cards-item {
+    padding: 0 2px 15px;
+    min-width: 220px;
+  }
+}
+
+/*# sourceMappingURL=profile.css.map */
