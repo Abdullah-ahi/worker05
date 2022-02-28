@@ -7,7 +7,7 @@
       <div class="info-block-main">
         <h3>{{openedRepoName}}</h3>
         <p>{{openedRepoDesc}}</p>
-        <a href="#">Preview</a>
+        <router-link :to="{name: 'projects'}">Preview</router-link>
       </div>
     </div>
     <pageLeft :componentName="componentName"></pageLeft>

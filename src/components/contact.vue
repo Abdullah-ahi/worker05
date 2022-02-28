@@ -72,18 +72,18 @@
             </div>
           </section>
           <div class="social-media">
-            <a href="#" class="social-media-item fa fa-facebook">
+            <router-link :to="{name: 'contact'}" class="social-media-item fa fa-facebook">
               <span class="social-media-name">Facebook</span>
-            </a>
-            <a href="#" class="social-media-item fa fa-twitter">
+            </router-link>
+            <router-link :to="{name: 'contact'}" class="social-media-item fa fa-twitter">
               <span class="social-media-name">Twitter</span>
-            </a>
-            <a href="#" class="social-media-item fa fa-google">
+            </router-link>
+            <router-link :to="{name: 'contact'}" class="social-media-item fa fa-google">
               <span class="social-media-name">Google</span>
-            </a>
-            <a href="#" class="social-media-item fa fa-linkedin">
+            </router-link>
+            <router-link :to="{name: 'contact'}" class="social-media-item fa fa-linkedin">
               <span class="social-media-name">Linkedin</span>
-            </a>
+            </router-link>
           </div>
         </div>
         <Footer :href="scrollBlock"/>
