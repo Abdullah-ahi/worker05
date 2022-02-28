@@ -6,6 +6,8 @@ import axios from 'axios';
 import { VueApexCharts } from 'vue-apexcharts';
 import VueAxios from 'vue-axios';
 
+// App.component('apexchart', VueApexCharts)
+
 createApp(App)
 .use(VueApexCharts)
 .use(VueAxios, axios)

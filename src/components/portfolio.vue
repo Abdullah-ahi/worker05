@@ -32,12 +32,12 @@
               <div class="repo-card-mask"></div>
               <span>{{repo.name}}</span>
               <div class="repo-card-btns">
-                <a href="#" class="repo-card-link">
+                <router-link :to="{name: 'projects'}" class="repo-card-link">
                   <i class="fas fa-link"></i>
-                </a>
-                <a href="#" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
+                </router-link>
+                <router-link :to="{name: 'projects'}" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
                   <i class="fas fa-search"></i>
-                </a>
+                </router-link>
               </div>
             </div>
 
@@ -49,12 +49,12 @@
               <div class="repo-card-mask"></div>
               <span>{{repo.name}}</span>
               <div class="repo-card-btns">
-                <a href="#" class="repo-card-link">
+                <router-link :to="{name: 'projects'}" class="repo-card-link">
                   <i class="fas fa-link"></i>
-                </a>
-                <a href="#" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
+                </router-link>
+                <router-link :to="{name: 'projects'}" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
                   <i class="fas fa-search"></i>
-                </a>
+                </router-link>
               </div>
             </div>
 
@@ -66,12 +66,12 @@
               <div class="repo-card-mask"></div>
               <span>{{repo.name}}</span>
               <div class="repo-card-btns">
-                <a href="#" class="repo-card-link">
+                <router-link :to="{name: 'projects'}" class="repo-card-link">
                   <i class="fas fa-link"></i>
-                </a>
-                <a href="#" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
+                </router-link>
+                <router-link :to="{name: 'projects'}" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
                   <i class="fas fa-search"></i>
-                </a>
+                </router-link>
               </div>
             </div>
 
@@ -83,12 +83,12 @@
               <div class="repo-card-mask"></div>
               <span>{{repo.name}}</span>
               <div class="repo-card-btns">
-                <a href="#" class="repo-card-link">
+                <router-link :to="{name: 'projects'}" class="repo-card-link">
                   <i class="fas fa-link"></i>
-                </a>
-                <a href="#" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
+                </router-link>
+                <router-link :to="{name: 'projects'}" class="repo-card-link" @click="handleOpenRepoDesc(repo, $event)">
                   <i class="fas fa-search"></i>
-                </a>
+                </router-link>
               </div>
             </div>
           </section>

@@ -73,10 +73,7 @@
   import pageLeft from './pageLeft';
   import closeButton from './closeButton';
   import '../styles/resume/resume.css';
-  //import Vue from "vue";
-  //import { VueApexCharts } from 'vue-apexcharts';
   import Footer from './footer.vue';
-  //Vue.component('apexchart', VueApexCharts);
   export default {
     name: 'Resume',
     components: {
