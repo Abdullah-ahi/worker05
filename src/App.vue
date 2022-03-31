@@ -17,14 +17,13 @@ export default {
   methods: {
     async getRepositories() {
       try {
-        const res = await fetch('https://api.github.com/users/Abdullah-ahi/repos');
+        const res = await fetch('https://api.github.com/users/astromona01/repos');
         const data = await res.json();
         this.$store.commit('saveRepositories', data);
         return data;
       }catch(e){
         console.log(e)
-      }
-    },
+      }    },
     checkRepositories() {
       return !this.$store.getters.repositories.length 
         ? this.getRepositories()
